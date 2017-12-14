@@ -8,8 +8,10 @@
         "php": ">=7.0.0",
         "barryvdh/laravel-ide-helper": "^2.4",
         "fideloper/proxy": "~3.3",
+        "klarna/kco_rest": "^2.2",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "stripe/stripe-php": "^5.7"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

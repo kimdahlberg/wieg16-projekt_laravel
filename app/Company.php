@@ -7,8 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Company extends Model
 {
 
-        public $incrementing = false;
-        public $timestamps = false;
+        public $incrementing = true;
+        public $timestamps = true;
 
         protected $fillable = [
         'id',

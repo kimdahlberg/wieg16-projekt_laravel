@@ -29,6 +29,7 @@ class Customer extends Model
         'is_active',
         'customer_extra_text',
         'customer_due_date_period',
+        'company_id',
     ];
     /* // Länka modellen till en annan tabell
  protected $table = 'my_customers';
@@ -46,6 +47,17 @@ class Customer extends Model
         return $this->hasOne(Company::class);
     }
 
+    public function orders(){
+        return $this->hasMany(Order::class);
+    }
+
+    public function address(){
+        return $this->hasOne(Address::class);
+    }
+
+    public function company(){
+        return $this->belongsTo(Company::class);
+    }
 
 }
 
